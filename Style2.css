@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #dddddd;
+}
+
+*{
+    box-sizing: border-box;
+}
+@media screen {
+    .container{
+        flex-direction: row-reverse;
+    }
+    
+}
+
+.container{
+    display:grid;
+    max-width: 1140px;
+    background-color: #ffffff;
+    height: auto;
+    margin: 40px auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+h1{
+    font-size:30px;
+    margin:0;
+}
+
+.clear{
+    clear: both;
+}
+
+nav{
+    float:left;
+    width: 100%;
+    background-color: #dddddd;
+    text-align: center;
+    padding: 30px 15px;
+    margin-bottom: 20px;
+}
+
+header{
+    float: center;
+    width: 100%;
+    background-color: #6a6a6a;
+    text-align: center;
+    padding: 130px 15px;
+    margin-bottom: 20px;
+}
+
+.fact section{
+    float:left; width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 10px;
+    margin-bottom: 0px;
+    justify-content: flex-end;
+}
+
+.fact section .content{
+    float: left;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.fact section .content .fact{
+    width:25%;
+    float: left;
+    padding: 0px 10px;
+}
+.fact section .content .fact .box{
+    display: grid;
+    background-color: gray;
+    font-size: 30px;
+    color:#000000;
+    padding: 60px 15;
+}
+
+.Picture section{
+    float:left;
+    width: 100%;
+    background-color: #dddddd;
+    text-align: center;
+    padding: 50px 10px;
+    margin-bottom: 20px;
+}
+
+.Picture section .content{
+    float: left;
+    width: 100%;
+    margin-top: 60;
+}
+
+.Picture section .content .left{
+    width: 50%;
+    float: left;
+   padding: 0px 10px;
+}
+
+.Picture section .content .left .card{
+    padding: 200px 15px;
+    font-size: 30px;
+    color: #a32323;
+    background-color: gray;
+}
+.Picture section .content .right{
+    width: 50%;
+    float: left;
+    padding: 0px 10px;
+}
+
+.Picture section .content .right .card{
+    padding: 48px 15px;
+    font-size: 30px;
+    color: #fff;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+
+Footer{
+float:left;
+width: 100%;
+background-color: #dddddd;
+text-align: center;
+padding: 50px 10px;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--Use the focus pseudo class to format valid and invalid selected boxes(At the bottom of style.css)-->
+<html>
+    <head>
+        <title>Contact Form</title>
+        <meta charset=""utf-8 />
+        <link rel="stylesheet" href="Style.css">
+        
+    </head>
+    <div class="title">
+        <h2><b>Contact Info</b></h2>
+      </div>
+<body>
+<!--Create and format a form with multiple field sets-->
+    <form>
+<!--input types: text-->
+<!--Validate data with by having certain fields required and field lengths-->
+      <div>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Reptile" maxlength="25" required>
+      </div> 
+
+      <br>
+
+      <div>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Kingdom" maxlength="25" required>
+    </div>
+
+    <br>
+<!--Include at least one input that is set for a mobile keyboard type (e.g. number, email, url, etc.)-->
+    <div>
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email" placeholder="Reptile@gmail.com" maxlength="30" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="Phone">Phone #:</label>
+        <input type="tel" id="Phone" name="Phone" placeholder="(123)-456-7890" maxlength="14" required>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="bdate">Date of Birth:</label>
+        <input type="date" id="bdate" name="bdate">
+    </div>
+
+    <br>
+<!--input types: date/time-->
+    <div>
+        <label for="date/time">Choose your Date and Time that your are free:</label>
+        <input type="datetime-local" id="date/time" name="date/time">
+    </div>
+
+    <br>
+<!--input types: radio buttons-->
+    <div>
+        <label for="Gender">Gender:</label>
+
+        <label>Male</label>
+        <input type="radio" name="title"value="Male">
+
+        <label>Female</label>
+        <input type="radio" name="title" value="Female">
+
+    </div>
+
+    <br>
+<!--input types: spinners-->
+    <div>
+        <Label for="Age">Age:</Label>
+        <input name="Age" id="Age" type="number"
+        value="1"value step="1" min="0" max="100"/>
+    </div>
+
+    <br>
+<!--Create a selection list-->
+    <div>
+        <Label for="State">State:</Label>
+        <select id="State" name="State">
+            <option value="North Carolina">North Carolina</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="Tennesse">Tennesse</option>
+            <option value="Virgina">Virgina</option>
+            <option value="Georgia">Georgia</option>
+        </select>
+    </div>
+
+    <br>
+<!--Include a datalist and use it for input-->
+<div class="formRow">
+    <label for="City">City:</label>
+    <input name="City"  id="City" type="text" list="CityType">
+    <datalist id="CityType">
+        <option value="Charlotte">
+        <option value="Rockhill">
+        <option vaule="Nashville">
+        <option value="Richmond">
+        <option value="Athens">
+    </datalist>
+</div>
+    <br>
+<!--Validate data with patterns-->
+    <div>
+        <label for="Postal">Postal code:</label>
+        <input type="text" id="Postal" name="Postal" pattern="^\d{5}(-\{4})?$" required>
+        
+    </div>
+
+    <br>
+
+    <div>
+        <label for="Favorite Reptiles">What is your favorite type of Reptile:</label>
+
+        <br>
+<!--input types: check boxes-->        
+        <label for="Lizards">Lizards</label>
+        <input type="checkbox" id="Lizards" name="Lizards">
+
+        <label for="Turtles">Turtles</label>
+        <input type="checkbox" id="Turtles" name="Turtles">
+
+        <label for="Snakes">Snakes</label>
+        <input type="checkbox" id="Snakes" name="Snakes">
+
+        <label for="Crocodiles">Crocodiles</label>
+        <input type="checkbox" id="Crocodiles" name="Crocodiles">
+    </div>
+
+    <br>
+<!--input types: range sliders-->
+    <div class="formrow">
+        <label for="rangeBox">Rate my website<br />(0=poor; 10=great)</label>
+        0
+        <input name="website rating" id="rangeBox" type="range" value="5" step="1" min="0" max="10" />
+        10
+
+    </div>
+
+    <br>
+
+    <label for="Feedback">Give feedback on my website and I'll get back to you as soon as I can.</label>
+
+    <br>
+<!--Create and format a text area-->
+    <textarea name="Feedback" id="Feedback"></textarea>
+
+    <br>
+    <br>
+<!--Create a submit button-->
+    <div>
+        <input type="Submit">
+    </div>
+
+    <br>
+<!--Create a Cancel button-->
+    <div>
+        <a href="http://127.0.0.1:3000/Codes and Programs/Home.html" class="btn">
+        <button type="button">
+            Cancel
+        </button>
+        </a>
+    
+    </div>
+    
+    <br>
+<!--Create a reset button-->
+    <div>
+        <input type="Reset">
+    </div>
+
+    </form>
+</body>
+</html>
